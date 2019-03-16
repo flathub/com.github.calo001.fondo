@@ -85,7 +85,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/calo001/fondo.git",
-                    "commit" : "fa89acf759dc1f64fc73a2e292bdf0cbbba7dd04"
+                    "commit" : "0a3e40074659c247a756acc1d7187a209ba94d5c"
                 },
                 {
                     "type" : "patch",
