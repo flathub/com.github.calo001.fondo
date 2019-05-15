@@ -3,7 +3,7 @@
     "base" : "io.elementary.BaseApp",
     "base-version" : "juno",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.32",
+    "runtime-version" : "3.30",
     "sdk" : "org.gnome.Sdk",
     "command" : "com.github.calo001.fondo",
     "finish-args" : [
@@ -85,7 +85,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/calo001/fondo.git",
-                    "commit" : "0a3e40074659c247a756acc1d7187a209ba94d5c"
+                    "commit" : "dd012ecd675f2059966a7f699bc42e7bf15657af"
                 },
                 {
                     "type" : "patch",
