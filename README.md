@@ -56,13 +56,23 @@
 
 `flatpak run com.github.calo001.fondo`
 
+## Support me
+
+Fondo is and will always be free for the world 🌎️. If you like the project and would like to fund and contribute to my work, you can do it via Paypal.Me:
+
+<p align="center">
+  <a href="https://www.paypal.me/calo001" target="_blank">
+    <img src="https://raw.githubusercontent.com/calo001/fondo/master/resources/paypalme.png" alt="Screenshot">
+  </a>
+</p>
+
 ## Special thanks
 
 ### Support, help & inspiration
 
 <p align="center">
   <a href="http://unsplash.com">
-    <img src="https://raw.githubusercontent.com/calo001/fondo/master/data/images/poweredunsplash.png" alt="Screenshot">
+    <img src="https://raw.githubusercontent.com/calo001/fondo/master/resources/unsplash_logo.png" alt="Screenshot">
   </a>
 </p>
 <p align="center">
