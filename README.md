@@ -65,6 +65,11 @@ Fondo is and will always be free for the world 🌎️. If you like the project 
     <img src="https://raw.githubusercontent.com/calo001/fondo/master/resources/paypalme.png" alt="Screenshot">
   </a>
 </p>
+<p align="center">
+  <a href="https://www.patreon.com/carloslr" target="_blank">
+      <img src="https://raw.githubusercontent.com/calo001/fondo/master/resources/become_a_patron_button.png" alt="Screenshot">
+  </a>
+</p>
 
 ## Special thanks
 
