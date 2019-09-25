@@ -3,7 +3,7 @@
     "base" : "io.elementary.BaseApp",
     "base-version" : "juno",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.34",
+    "runtime-version" : "3.32",
     "sdk" : "org.gnome.Sdk",
     "command" : "com.github.calo001.fondo",
     "finish-args" : [
@@ -41,7 +41,7 @@
         {
             "name" : "libdee",
             "build-options" : {
-                "cflags" : "-Wno-error=misleading-indentation"
+                "cflags" : "-Wno-error"
             },
             "sources" : [
                 {
