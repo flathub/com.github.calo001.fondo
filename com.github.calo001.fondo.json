@@ -2,9 +2,9 @@
     "app-id": "com.github.calo001.fondo",
     "base": "io.elementary.BaseApp",
     "base-version": "juno-19.08",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
-    "sdk": "org.freedesktop.Sdk",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.34",
+    "sdk": "org.gnome.Sdk",
     "command": "com.github.calo001.fondo",
     "finish-args": [
         "--share=network",
@@ -17,9 +17,7 @@
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        /* Unity launcher access */
-        "--talk-name=com.canonical.Unity"
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "cleanup": [
         "/include",
@@ -35,81 +33,13 @@
     ],
     "modules": [
         {
-            "name": "libunity",
-            "config-opts" : [
-                "--with-pygi_overrides_dir=/app/lib/python3.7/site-packages/gi/overrides"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libunity/7.1.4+16.04.20180209.1-0ubuntu1/libunity_7.1.4+16.04.20180209.1.orig.tar.gz",
-                    "sha256": "d4013500c0a972ecea5ba26e3567ee5d4c3eae481281badbbbe3cbaeab5f389b"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "gnome-common",
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://download.gnome.org/sources/gnome-common/3.18/gnome-common-3.18.0.tar.xz",
-                            "sha256": "22569e370ae755e04527b76328befc4c73b62bfd4a572499fde116b8318af8cf"
-                        }
-                    ]
-                },
-                {
-                    "name": "libdee",
-                    "make-install-args": [
-                      "girdir=/app/share/gir-1.0",
-                      "typelibdir=/app/lib/girepository-1.0"
-                    ],
-                    "build-options": {
-                        "cflags": "-Wno-error"
-                    },
-                    "config-opts": [
-                        "--with-pygi-overrides-dir=/app/lib/python3.7/site-packages/gi/overrides"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://launchpad.net/dee/1.0/1.2.7/+download/dee-1.2.7.tar.gz",
-                            "md5": "b92f27f0a99cac24c2128880601bb7d7"
-                        }
-                    ]
-                },
-                {
-                    "name": "libdbusmenu",
-                    "config-opts": [
-                        "--enable-gtk",
-                        "--disable-dumper"
-                    ],
-                    "build-options": {
-                        "cflags": "-Wno-error"
-                    },
-                    "make-install-args": [
-                        "typelibdir=/app/lib/girepository-1.0"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://launchpad.net/libdbusmenu/16.04/16.04.0/+download/libdbusmenu-16.04.0.tar.gz",
-                            "md5": "3c05d53053b3ea69384b5f93d7a4c7c4"
-                        }
-                    ],
-                    "modules": [
-                        "shared-modules/intltool/intltool-0.51.json"
-                    ]
-                }
-            ]
-        },
-        {
             "name": "fondo",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/calo001/fondo.git",
-                    "commit": "761732be1708fdd915818b7fc9ddb774a13b0be4"
+                    "commit": "835de6976ea5d8abf9e282a633ee97faa32422ae"
                 },
                 {
                     "type": "patch",
