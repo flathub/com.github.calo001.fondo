@@ -3,7 +3,7 @@
     "base": "io.elementary.BaseApp",
     "base-version": "juno-19.08",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.34",
+    "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.calo001.fondo",
     "finish-args": [
