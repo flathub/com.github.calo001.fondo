@@ -39,7 +39,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/calo001/fondo.git",
-                    "commit": "e3c303b3c413db09182cf54eff24b4a2103d47c4"
+                    "commit": "ae0afdb731bbe0af8d1f195be6bd48f45133d92d"
                 },
                 {
                     "type": "patch",
