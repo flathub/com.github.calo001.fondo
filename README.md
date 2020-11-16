@@ -79,7 +79,7 @@ Fondo is and will always be free for the world 🌎️. If you like the project 
 
 <p align="center">
   <a href="http://unsplash.com">
-    <img src="https://raw.githubusercontent.com/calo001/fondo/master/resources/unsplash_logo.png" alt="Screenshot">
+    <img src="https://raw.githubusercontent.com/calo001/fondo/master/resources/unsplash_logo.png" width='500' alt="Screenshot">
   </a>
 </p>
 <p align="center">
