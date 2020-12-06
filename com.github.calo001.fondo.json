@@ -15,6 +15,8 @@
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.gnome.SessionManager",
         "--filesystem=xdg-run/dconf",
+        "--talk-name=org.freedesktop.FileManager1",
+        "--filesystem=host",
         "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf",
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
@@ -39,7 +41,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/calo001/fondo.git",
-                    "commit": "9e71f62770009e22d1c02b5b825bc0ee912e6284"
+                    "commit": "05e3c6bc4a36e2b3cbaff31f9f8eb13de17d9201"
                 },
                 {
                     "type": "patch",
