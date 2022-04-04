@@ -109,7 +109,7 @@ Gifted by the world’s most generous community of photographers. 🎁
 - <img src="https://avatars1.githubusercontent.com/u/50637431" width=15 alt="costaht"> [costaht](https://github.com/costaht) Brazilian Portuguese
 - <img src="https://avatars1.githubusercontent.com/u/45366162" width=15 alt="NathanBnm"> [NathanBnm](https://github.com/NathanBnm) French
 - <img src="https://avatars1.githubusercontent.com/u/1716229" width=15 alt="Heimen Stoffels"> [Heimen Stoffels](https://github.com/Vistaus) Dutch (Netherlands)
-- <img src="https://avatars1.githubusercontent.com/u/20098065" width=15 alt="Onno Giesmann"> [Onno Giesmann](https://github.com/Etamuk) Turkish and German
+- <img src="https://avatars1.githubusercontent.com/u/20098065" width=15 alt="Onno Giesmann"> [Onno Giesmann](https://github.com/Etamuk) German
 - <img src="https://avatars1.githubusercontent.com/u/43657314" width=15 alt="Milo Ivir"> [Milo Ivir](https://github.com/milotype) Croatian
 - <img src="https://avatars1.githubusercontent.com/u/34811668" width=15 alt="Albano Battistella"> [Albano Battistella](https://github.com/albanobattistella) Italian
 - <img src="https://avatars1.githubusercontent.com/u/62076029" width=15 alt="André Barata"> [André Barata](https://github.com/rottenpants466) Portuguese Portugal
