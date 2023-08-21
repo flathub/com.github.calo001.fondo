@@ -1,9 +1,9 @@
 {
     "app-id": "com.github.calo001.fondo",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-19.08",
+    "base-version": "juno-22.08",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.calo001.fondo",
     "finish-args": [
