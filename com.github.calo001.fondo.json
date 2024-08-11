@@ -1,10 +1,10 @@
 {
     "app-id": "com.github.calo001.fondo",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-22.08",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
-    "sdk": "org.gnome.Sdk",
+    "base-version": "juno-23.08",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "23.08",
+    "sdk": "org.freedesktop.Sdk",
     "command": "com.github.calo001.fondo",
     "finish-args": [
         "--share=network",
