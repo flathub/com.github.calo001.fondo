@@ -70,8 +70,16 @@
                 },
                 {
                     "type": "patch",
-                    "path": "elementary-theme.patch"
+                    "paths": [
+                        "fix-appdata.patch",
+                        "elementary-theme.patch"
+                    ]
                 }
+            ],
+            "post-install": [
+                "mkdir -p /app/share/icons/hicolor/scalable/apps",
+                "mv /app/share/icons/hicolor/128x128@2/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "find /app/share/icons/hicolor -type f -not -path \"*scalable*\" -not -path \"*actions*\" -name \"*.svg\" -delete"
             ]
         }
     ]
