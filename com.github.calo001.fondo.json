@@ -1,25 +1,27 @@
 {
     "app-id": "com.github.calo001.fondo",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "25.08",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-19.08",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
-    "sdk": "org.gnome.Sdk",
+    "base-version": "circe-25.08",
+    "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.vala"
+    ],
+    "build-options": {
+        "prepend-path": "/usr/lib/sdk/vala/bin/",
+        "prepend-ld-library-path": "/usr/lib/sdk/vala/lib"
+    },
     "command": "com.github.calo001.fondo",
     "finish-args": [
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
-        "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.gnome.SessionManager",
-        "--filesystem=xdg-run/dconf",
         "--talk-name=org.freedesktop.FileManager1",
-        "--filesystem=host",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--filesystem=host"
     ],
     "cleanup": [
         "/include",
@@ -34,6 +36,29 @@
         "*.a"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
+        {
+            "name": "libhandy",
+            "buildsystem": "meson",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.3/libhandy-1.8.3.tar.gz",
+                    "sha256": "7e7670f5d0a6d0adc24b888da44dab938a6f52472b8944d6dd4e31b6d3569a5f"
+                }
+            ]
+        },
+        {
+            "name": "libgee",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz",
+                    "sha256": "189815ac143d89867193b0c52b7dc31f3aa108a15f04d6b5dca2b6adfad0b0ee"
+                }
+            ]
+        },
         {
             "name": "fondo",
             "buildsystem": "meson",
@@ -41,7 +66,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/calo001/fondo.git",
-                    "commit": "bbdd066014888f5c5de588e2871a59ede0f7a566"
+                    "commit": "216c6115f2e9f19486ddc08fc697138b0b74e14d"
                 },
                 {
                     "type": "patch",
