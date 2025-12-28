@@ -1,25 +1,20 @@
 {
     "app-id": "com.github.calo001.fondo",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-19.08",
+    "base-version": "juno-22.08",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.calo001.fondo",
     "finish-args": [
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
-        "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.gnome.SessionManager",
-        "--filesystem=xdg-run/dconf",
         "--talk-name=org.freedesktop.FileManager1",
-        "--filesystem=host",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--filesystem=host"
     ],
     "cleanup": [
         "/include",
@@ -34,6 +29,7 @@
         "*.a"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "fondo",
             "buildsystem": "meson",
@@ -45,8 +41,16 @@
                 },
                 {
                     "type": "patch",
-                    "path": "elementary-theme.patch"
+                     "paths": [
+                        "fix-appdata.patch",
+                        "elementary-theme.patch"
+                    ]
                 }
+            ],
+            "post-install": [
+                "mkdir -p /app/share/icons/hicolor/scalable/apps",
+                "mv /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "find /app/share/icons/hicolor -type f -not -path \"*scalable*\" -not -path \"*actions*\" -name \"*.svg\" -delete"
             ]
         }
     ]
